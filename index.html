@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="qeunox — a personal page by Arya." />
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>qeunox</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #777777;
+      --line: #e9e9e9;
+      --card: #fbfbfb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 400;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    main {
+      width: min(920px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      min-height: 92vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 72px 0;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(64px, 12vw, 150px);
+      font-weight: 500;
+      letter-spacing: -0.075em;
+      line-height: .9;
+    }
+
+    .tagline {
+      margin-top: 26px;
+      max-width: 620px;
+      font-size: clamp(16px, 2vw, 21px);
+    }
+
+    .content {
+      padding: 48px 0 120px;
+    }
+
+    .section {
+      max-width: 780px;
+      margin-bottom: 120px;
+    }
+
+    .card {
+      padding: clamp(28px, 5vw, 56px);
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      background: var(--card);
+    }
+
+    p {
+      margin: 0 0 28px;
+      font-size: clamp(16px, 1.7vw, 20px);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .lead {
+      font-size: clamp(20px, 2.3vw, 27px);
+      line-height: 1.55;
+    }
+
+    .spacer {
+      height: 34px;
+    }
+
+    .ending {
+      min-height: 78vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 120px 0 80px;
+    }
+
+    .ending h2 {
+      margin: 0 0 26px;
+      font-size: clamp(52px, 9vw, 108px);
+      font-weight: 500;
+      letter-spacing: -0.065em;
+      line-height: .95;
+    }
+
+    .ending-copy {
+      margin-top: 58px;
+    }
+
+    footer {
+      padding: 0 0 42px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    ::selection {
+      background: var(--text);
+      color: var(--bg);
+    }
+
+    @media (max-width: 600px) {
+      main {
+        width: calc(100% - 36px);
+      }
+
+      .hero {
+        min-height: 88vh;
+      }
+
+      .hero h1 {
+        font-size: clamp(58px, 19vw, 78px);
+      }
+
+      .tagline {
+        margin-top: 22px;
+      }
+
+      .content {
+        padding-top: 24px;
+      }
+
+      .section {
+        margin-bottom: 88px;
+      }
+
+      .card {
+        border-radius: 24px;
+        padding: 28px 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .lead {
+        font-size: 20px;
+      }
+
+      .ending {
+        min-height: 70vh;
+        padding-top: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <section class="hero">
+      <h1>qeunox</h1>
+      <div class="tagline">
+        is the social worth thinking about?
+      </div>
+    </section>
+
+    <div class="content">
+
+      <section class="section">
+        <div class="card">
+          <p class="lead">
+            qeunox is a username i've used for years.
+          </p>
+
+          <p>
+            somewhere along the way, it became the name attached
+            to the things i post, write, and choose to show online.
+          </p>
+
+          <div class="spacer"></div>
+
+          <p class="lead">
+            i'm arya.
+          </p>
+
+          <p>
+            i'm interested in communication, writing, media,
+            and the way people express themselves through them.
+          </p>
+
+          <p>
+            i like paying attention to how people talk, how ideas are presented,
+            how something can mean different things depending on who says it,
+            and how the internet changes the way we present ourselves.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="lead">
+          writing is part of that too.
+        </p>
+
+        <p>
+          sometimes i write because i have something to say.
+        </p>
+
+        <p>
+          sometimes i'm just trying to understand what i'm thinking.
+        </p>
+      </section>
+
+      <section class="section">
+        <p class="lead">
+          qeunox isn't a different person.
+        </p>
+
+        <p>
+          it's just the name i use for the part of me
+          that ends up on the internet.
+        </p>
+      </section>
+
+      <section class="ending">
+        <h2>qeunox</h2>
+
+        <p>
+          is the social worth thinking about?
+        </p>
+
+        <div class="ending-copy">
+          <p>probably.</p>
+          <p>that's why i'm still thinking about it.</p>
+        </div>
+      </section>
+
+    </div>
+
+    <footer>
+      qeunox.xyz — 2026
+    </footer>
+
+  </main>
+</body>
+</html>
