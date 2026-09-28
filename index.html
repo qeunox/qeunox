@@ -53,13 +53,17 @@
       padding: 72px 0;
     }
 
-    .brand-logo {
-      display: block;
-      width: clamp(88px, 13vw, 150px);
-      height: auto;
-      margin: 0;
-    }
+.brand-logo {
+  display: block;
+  width: clamp(88px, 13vw, 150px);
+  height: auto;
+  margin: 0;
 
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
     .tagline {
       margin-top: 26px;
       max-width: 620px;
@@ -173,7 +177,12 @@
   <main>
 
     <section class="hero">
-      <img class="brand-logo" src="qeunox-logo.png" alt="qeunox logo">
+<img
+  class="brand-logo"
+  src="qeunox-logo.png"
+  alt="qeunox logo"
+  draggable="false"
+>
       <div class="tagline">
         is the social worth thinking about?
       </div>
