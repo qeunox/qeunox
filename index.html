@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="qeunox — a personal page by Arya." />
+  <meta name="description" content="qeunox — an internet persona by Arya." />
   <meta name="theme-color" content="#ffffff" />
 
   <title>qeunox</title>
@@ -53,21 +53,50 @@
       padding: 72px 0;
     }
 
-.brand-logo {
-  display: block;
-  width: clamp(88px, 13vw, 150px);
-  height: auto;
-  margin: 0;
+    .brand-logo {
+      display: block;
+      width: clamp(88px, 13vw, 150px);
+      height: auto;
+      margin: 0;
 
-  pointer-events: none;
-  user-select: none;
-  -webkit-user-select: none;
-  -webkit-user-drag: none;
-}
+      pointer-events: none;
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-user-drag: none;
+
+      opacity: 0;
+      animation: logoFade 1.8s ease forwards;
+    }
+
     .tagline {
       margin-top: 26px;
       max-width: 620px;
       font-size: clamp(16px, 2vw, 21px);
+
+      opacity: 0;
+      animation: textFade 1.2s ease 0.75s forwards;
+    }
+
+    @keyframes logoFade {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes textFade {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
 
     .content {
@@ -127,6 +156,15 @@
       color: var(--bg);
     }
 
+    @media (prefers-reduced-motion: reduce) {
+      .brand-logo,
+      .tagline {
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
+    }
+
     @media (max-width: 600px) {
       main {
         width: calc(100% - 36px);
@@ -177,12 +215,13 @@
   <main>
 
     <section class="hero">
-<img
-  class="brand-logo"
-  src="qeunox-logo.png"
-  alt="qeunox logo"
-  draggable="false"
->
+      <img
+        class="brand-logo"
+        src="qeunox-logo.png"
+        alt="qeunox logo"
+        draggable="false"
+      >
+
       <div class="tagline">
         is the social worth thinking about?
       </div>
@@ -192,13 +231,21 @@
 
       <section class="section">
         <div class="card">
+
           <p class="lead">
-            qeunox is a username i've used for years.
+            qeunox is an internet persona.
           </p>
 
           <p>
-            somewhere along the way, it became the name attached
-            to the things i post, write, and choose to show online.
+            it's where i put the things i want to say about social life,
+            media, internet culture, and the parts of the internet that
+            bother me enough to think about.
+          </p>
+
+          <p>
+            some of it is criticism.<br>
+            some of it is observation.<br>
+            some of it is simply me questioning things i don't particularly like.
           </p>
 
           <div class="spacer"></div>
@@ -217,35 +264,25 @@
             how something can mean different things depending on who says it,
             and how the internet changes the way we present ourselves.
           </p>
+
         </div>
       </section>
 
       <section class="section">
+
         <p class="lead">
-          writing is part of that too.
+          qeunox doesn't represent everything about me.
         </p>
 
         <p>
-          sometimes i write because i have something to say.
+          it's simply the persona i use online for the thoughts,
+          criticisms, observations, and things i choose to put out there.
         </p>
 
-        <p>
-          sometimes i'm just trying to understand what i'm thinking.
-        </p>
-      </section>
-
-      <section class="section">
-        <p class="lead">
-          qeunox isn't a different person.
-        </p>
-
-        <p>
-          it's just the name i use for the part of me
-          that ends up on the internet.
-        </p>
       </section>
 
       <section class="ending">
+
         <p>
           is the social worth thinking about?
         </p>
@@ -254,6 +291,7 @@
           <p>probably.</p>
           <p>that's why i'm still thinking about it.</p>
         </div>
+
       </section>
 
     </div>
