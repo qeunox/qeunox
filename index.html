@@ -21,13 +21,8 @@
       --card: #fbfbfb;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -53,12 +48,11 @@
       padding: 72px 0;
     }
 
-    .hero h1 {
+    .brand-logo {
+      display: block;
+      width: clamp(88px, 13vw, 150px);
+      height: auto;
       margin: 0;
-      font-size: clamp(64px, 12vw, 150px);
-      font-weight: 500;
-      letter-spacing: -0.075em;
-      line-height: .9;
     }
 
     .tagline {
@@ -67,9 +61,7 @@
       font-size: clamp(16px, 2vw, 21px);
     }
 
-    .content {
-      padding: 48px 0 120px;
-    }
+    .content { padding: 48px 0 120px; }
 
     .section {
       max-width: 780px;
@@ -88,18 +80,14 @@
       font-size: clamp(16px, 1.7vw, 20px);
     }
 
-    p:last-child {
-      margin-bottom: 0;
-    }
+    p:last-child { margin-bottom: 0; }
 
     .lead {
       font-size: clamp(20px, 2.3vw, 27px);
       line-height: 1.55;
     }
 
-    .spacer {
-      height: 34px;
-    }
+    .spacer { height: 34px; }
 
     .ending {
       min-height: 78vh;
@@ -109,17 +97,12 @@
       padding: 120px 0 80px;
     }
 
-    .ending h2 {
-      margin: 0 0 26px;
-      font-size: clamp(52px, 9vw, 108px);
-      font-weight: 500;
-      letter-spacing: -0.065em;
-      line-height: .95;
+    .ending .brand-logo {
+      width: clamp(76px, 10vw, 120px);
+      margin-bottom: 26px;
     }
 
-    .ending-copy {
-      margin-top: 58px;
-    }
+    .ending-copy { margin-top: 58px; }
 
     footer {
       padding: 0 0 42px;
@@ -133,47 +116,27 @@
     }
 
     @media (max-width: 600px) {
-      main {
-        width: calc(100% - 36px);
-      }
-
-      .hero {
-        min-height: 88vh;
-      }
-
-      .hero h1 {
-        font-size: clamp(58px, 19vw, 78px);
-      }
-
-      .tagline {
-        margin-top: 22px;
-      }
-
-      .content {
-        padding-top: 24px;
-      }
-
-      .section {
-        margin-bottom: 88px;
-      }
+      main { width: calc(100% - 36px); }
+      .hero { min-height: 88vh; }
+      .brand-logo { width: 92px; }
+      .tagline { margin-top: 22px; }
+      .content { padding-top: 24px; }
+      .section { margin-bottom: 88px; }
 
       .card {
         border-radius: 24px;
         padding: 28px 24px;
       }
 
-      p {
-        font-size: 16px;
-      }
-
-      .lead {
-        font-size: 20px;
-      }
+      p { font-size: 16px; }
+      .lead { font-size: 20px; }
 
       .ending {
         min-height: 70vh;
         padding-top: 80px;
       }
+
+      .ending .brand-logo { width: 84px; }
     }
   </style>
 </head>
@@ -182,7 +145,7 @@
   <main>
 
     <section class="hero">
-      <h1>qeunox</h1>
+      <img class="brand-logo" src="qeunox-logo.png" alt="qeunox logo">
       <div class="tagline">
         is the social worth thinking about?
       </div>
@@ -246,7 +209,7 @@
       </section>
 
       <section class="ending">
-        <h2>qeunox</h2>
+        <img class="brand-logo" src="qeunox-logo.png" alt="qeunox logo">
 
         <p>
           is the social worth thinking about?
